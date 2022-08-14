@@ -1,5 +1,5 @@
 // [45, 21, 6, 98, 56];
-
+// find out cheapest/lowest mobile form object with function
 const phones = [
     { name: 'Samsung', camera: 12, storage: '32gb', price: 36000, color: 'silver' },
     { name: 'Walton', camera: 10, storage: '32gb', price: 22000, color: 'silver' },
@@ -9,7 +9,6 @@ const phones = [
     { name: 'Nokia', camera: 6, storage: '32gb', price: 44000, color: 'golden' },
     { name: 'HTC', camera: 10, storage: '32gb', price: 62000, color: 'silver' },
 ];
-
 function cheapestPhone(phones){
     let cheapest = phones[0];
     for(let i = 0; i < phones.length; i++){
@@ -20,6 +19,13 @@ function cheapestPhone(phones){
     }
     return cheapest;
 }
-
 const mySelection = cheapestPhone(phones);
 console.log(mySelection);
+// print: 
+// {
+//     name: 'Oppo',
+//     camera: 25,
+//     storage: '32gb',
+//     price: 20000,
+//     color: 'black'
+//   }

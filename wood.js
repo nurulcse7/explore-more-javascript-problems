@@ -1,12 +1,11 @@
 /* 
+Mathematical operation in function
 fixed: per item wood requirements 
 1. chair --> 3 cft
 2. table --> 10 cft
 3. bed --> 50 cft
-
 vary: quantity
 */
-
 function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
     const perChairWood = 3;
     const perTableWood = 10;
@@ -19,6 +18,6 @@ function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
     const totalWood = chairWood + tableWood + bedWood;
     return totalWood;
 }
-
 const totalWood = woodCalculator(1, 1, 1);
 console.log('total wood required: ', totalWood);
+// print: total wood required:  63
